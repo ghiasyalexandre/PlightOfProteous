@@ -5,33 +5,35 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
     [Header("Enemy Statistics:")]
-    [SerializeField] private float health = 20f;
-    [SerializeField] private float enemyDamage = -2f;
-    [SerializeField] private float speed = 0.275f;
-    [SerializeField] private float projectileSpeed = 1.6f;
-    [Space]
-    [SerializeField] private float retreatDistance = 0.6f;
-    [SerializeField] private float stoppingDistance = 0.8f;
-    [SerializeField] private float aggroDistance = 2f;
+    [HideInInspector] public int health = 1;
+    [HideInInspector] public int enemyDamage;
+    [HideInInspector] public float speed;
+    [HideInInspector] public float projectileSpeed;
+    [HideInInspector] public float retreatDistance;
+    [HideInInspector] public float stoppingDistance;
+    [HideInInspector] public float aggroDistance;
 
-    public float startTimeBtwShots = 2f;
-    public float startWaitTime = 0.3f;
-    private float maxLifeTime = 6f;
-
-    public GameObject projectilePrefab;
-
+    [HideInInspector] public float retreatSpeed;
+    [HideInInspector] public float startTimeBtwShots;
+    [HideInInspector] public float startWaitTime;
+    [HideInInspector] public float maxLifeTime;
+    [HideInInspector] public Animator _animator;
     private SpriteRenderer spriteRenderer;
     private bool _collidedWithPlayer;
-    private Animator _animator;
-    private GameObject _player;
+    private float intensity = 1f;
+    private Transform _player;
 
     private float timeBtwShots;
     private float waitTime;
 
+    [HideInInspector] public ObjectToPool objectToPool;
+    private ObjectPooler pooler;
     private Health healthClass;
     private Canvas hpBar;
-    private ObjectPooler pooler;
-    //public EnemySpawner enemySpawner;
+
+    private bool aggro;
+
+    public bool Aggro { set { aggro = value; } }
 
     private void OnEnable()
     {
@@ -39,8 +41,8 @@ public class EnemyAI : MonoBehaviour
         hpBar = GetComponentInChildren<Canvas>();
         healthClass = GetComponent<Health>();
         _animator = GetComponentInChildren<Animator>();
-        _player = GameObject.FindGameObjectWithTag("Player");
-
+        _player = GameObject.FindGameObjectWithTag("Player").transform;
+        GetComponent<InitializeEnemy>().Init();
         gameObject.GetComponent<Collider2D>().enabled = true;
         hpBar.enabled = true;
         this.enabled = true;
@@ -53,14 +55,12 @@ public class EnemyAI : MonoBehaviour
         timeBtwShots = startTimeBtwShots;
 
         spriteRenderer.color = GetRandomColor();
+        spriteRenderer.material.color = new Color(intensity, intensity, intensity, 0f);
     }
 
     private void Update()
     {
-        if (healthClass.GetHealth() <= 0)
-            Die();
-
-        Vector3 aim = _player.transform.position - transform.position;
+        Vector3 aim = _player.position - transform.position;
         float distance = aim.magnitude;
 
         if (aim.x >= 0)
@@ -74,40 +74,43 @@ public class EnemyAI : MonoBehaviour
             hpBar.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (distance > aggroDistance)
+        if (aggro == false)
         {
             //Debug.Log("Patrol Phase");
             //_animator.SetBool("isPatrol", true);
             transform.position = this.transform.position;
         }
-        else if (distance > stoppingDistance)
+        else
         {
-            //Debug.Log("Attack Phase");
-            _animator.SetBool("isFollowing", true);
-            transform.position = Vector2.MoveTowards(transform.position, _player.transform.position, speed * Time.deltaTime);
-        }
-        else if (distance < stoppingDistance && distance > retreatDistance)
-        {
-            //Debug.Log("Idle Phase");
-            _animator.SetBool("isFollowing", false);
-            transform.position = this.transform.position;
-        }
-        else if (distance < retreatDistance)
-        {
-            //Debug.Log("Retreat Phase");
-            _animator.SetBool("isFollowing", true);
-            transform.position = Vector2.MoveTowards(transform.position, _player.transform.position, -speed * Time.deltaTime);
+            if (distance > stoppingDistance)
+            {
+                //Debug.Log("Attack Phase");
+                _animator.SetBool("isFollowing", true);
+                transform.position = Vector2.MoveTowards(transform.position, _player.position, speed * Time.deltaTime);
+            }
+            else if (distance < stoppingDistance && distance > retreatDistance)
+            {
+                //Debug.Log("Idle Phase");
+                _animator.SetBool("isFollowing", false);
+                transform.position = this.transform.position;
+            }
+            else if (distance < retreatDistance)
+            {
+                //Debug.Log("Retreat Phase");
+                _animator.SetBool("isFollowing", true);
+                transform.position = Vector2.MoveTowards(transform.position, _player.position, -speed * retreatSpeed * Time.deltaTime);
+            }
         }
 
         if (distance < stoppingDistance + 0.2f)
         {
-            if (timeBtwShots <= 0)
+            if (timeBtwShots <= 0 && healthClass.Invulnerable == false)
             {
                 _animator.SetTrigger("Attack");
                 aim = _player.transform.position - transform.position;
                 aim.Normalize();
 
-                GameObject projectile = pooler.GetPooledObject(4);
+                GameObject projectile = pooler.GetPooledObject((int)objectToPool);
                 projectile.SetActive(true);
                 projectile.transform.position = transform.position;
                 projectile.transform.rotation = Quaternion.identity;
@@ -125,6 +128,12 @@ public class EnemyAI : MonoBehaviour
                 timeBtwShots -= Time.deltaTime;
             }
         }
+    }
+
+    private void LateUpdate()
+    {
+        if (healthClass.GetHealth() <= 0)
+            Die();
     }
 
     Color GetRandomColor()
@@ -146,7 +155,7 @@ public class EnemyAI : MonoBehaviour
     {
         _animator.SetTrigger("isDead");
         GetComponent<Collider2D>().enabled = false;
-
+        healthClass.enabled = false;
         hpBar.enabled = false;
         this.enabled = false;
         //enemySpawner.NumActiveObj--;

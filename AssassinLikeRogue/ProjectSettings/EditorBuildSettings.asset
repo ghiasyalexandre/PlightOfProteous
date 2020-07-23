@@ -8,13 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 5f6f204e49410984ea988650e9fd05da
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Forest.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Cave.unity
-    guid: da9c05fa5e2d00043ad5715697edceab
-  - enabled: 1
-    path: Assets/Scenes/Hell.unity
-    guid: bd570578f19ca844e809678dcc0be7ea
+    path: Assets/Scenes/Neon.unity
+    guid: 37b0f4c4218e01044b1f38ca0ba66b08
   m_configObjects: {}

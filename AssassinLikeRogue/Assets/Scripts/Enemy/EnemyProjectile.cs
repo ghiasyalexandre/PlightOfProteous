@@ -6,7 +6,7 @@ public class EnemyProjectile : MonoBehaviour
     public GameObject hitEffect;
     private GameObject owner;
     private SpriteRenderer spriteRenderer;
-    private float projectileDamage;
+    private int projectileDamage;
     private float projectilSpeed;
 
     private Vector3 shootDir;
@@ -16,14 +16,14 @@ public class EnemyProjectile : MonoBehaviour
 
     public float ProjectileSpeed { set { projectilSpeed = value; } }
 
-    public float ProjectileDamage { set { projectileDamage = value; } }
+    public int ProjectileDamage { set { projectileDamage = value; } }
 
     private void OnEnable()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         Color color = GetRandomColor();
-        GetComponentInChildren<Light2D>().color = color;
+        //GetComponentInChildren<Light2D>().color = color;
         spriteRenderer.color = color;
     }
 
@@ -40,9 +40,9 @@ public class EnemyProjectile : MonoBehaviour
     private void Update()
     {
         Vector3 currentPosition = new Vector3(transform.position.x, transform.position.y, 0.0f);
-        Vector3 newPosition = currentPosition + shootDir * projectilSpeed * Time.deltaTime;
+        Vector3 newPosition = currentPosition + shootDir * 1.3f * Time.deltaTime;
 
-        Debug.DrawLine(currentPosition, newPosition, Color.red);
+        Debug.DrawLine(currentPosition, newPosition, Color.blue);
 
         RaycastHit2D[] hits = Physics2D.LinecastAll(currentPosition, newPosition);
         foreach (RaycastHit2D hit in hits)
@@ -63,18 +63,17 @@ public class EnemyProjectile : MonoBehaviour
                     bool isCriticalHit = Random.Range(0, 100) < 30 ? true : false;
                     if (isCriticalHit)
                     {
-                        DamagePopup.Create(transform.position, (int)projectileDamage * 2, isCriticalHit);
                         takeDamage.ModifyHealth(projectileDamage * 2);
                     }
                     else
                     {
-                        DamagePopup.Create(transform.position, (int)projectileDamage, isCriticalHit);
                         takeDamage.ModifyHealth(projectileDamage);
                     }
                     DestroyProjectile();
                 }
             }
         }
+
         transform.position = newPosition;
     }
 

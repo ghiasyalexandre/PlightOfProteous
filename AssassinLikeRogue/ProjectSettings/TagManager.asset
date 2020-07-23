@@ -9,6 +9,8 @@ TagManager:
   - Item
   - WeaponManager
   - Wall
+  - MoveSpot
+  - SpellNPC
   layers:
   - Default
   - TransparentFX
@@ -20,9 +22,9 @@ TagManager:
   - 
   - Blocking
   - Rooms
-  - 
-  - 
-  - 
+  - Item
+  - Map
+  - Enemy
   - CrossHair
   - 
   - 

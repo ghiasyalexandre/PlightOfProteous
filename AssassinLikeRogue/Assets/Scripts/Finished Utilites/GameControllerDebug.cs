@@ -90,12 +90,12 @@ public class GameControllerDebug : MonoBehaviour
             int count = reader.ReadInt32();
             for (int i = 0; i < count; i++)
             {
-                float hp;
+                int hp;
                 Vector3 p;
                 p.x = reader.ReadSingle();
                 p.y = reader.ReadSingle();
                 p.z = reader.ReadSingle();
-                hp = reader.ReadSingle();
+                hp = reader.ReadInt32();
                 Transform t = pooler.GetPooledObject(2).transform;
                 t.localPosition = p;
                 t.gameObject.GetComponent<Health>().SetHealth(hp);

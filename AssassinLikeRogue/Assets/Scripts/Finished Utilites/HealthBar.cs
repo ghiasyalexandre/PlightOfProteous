@@ -28,7 +28,7 @@ public class HealthBar : MonoBehaviour
         this.health = health;
         if (hpTextMesh != null)
             hpTextMesh.SetText("HP: " + health + " / " + maxHealth);
-        fillImage.fillAmount = 1;
+        fillImage.fillAmount = 1f;
     }
 
     public void SetMaxHealth(float maxHealth)

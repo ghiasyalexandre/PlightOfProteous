@@ -1,0 +1,938 @@
+fileFormatVersion: 2
+guid: 87829b6f3cd81c649a52fe9ca0cd5098
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -270039738421603607
+    second: SnowBall_0
+  - first:
+      213: -3279698405110991144
+    second: SnowBall_1
+  - first:
+      213: 1905357422817079123
+    second: SnowBall_2
+  - first:
+      213: 3631912181058777041
+    second: SnowBall_3
+  - first:
+      213: 4122726054205713626
+    second: SnowBall_4
+  - first:
+      213: -6559142221375658475
+    second: SnowBall_5
+  - first:
+      213: -7168000258110148365
+    second: SnowBall_6
+  - first:
+      213: 5980841008936862300
+    second: SnowBall_7
+  - first:
+      213: -8016961525657812610
+    second: SnowBall_8
+  - first:
+      213: -7694451022105616607
+    second: SnowBall_9
+  - first:
+      213: 3471115922154829644
+    second: SnowBall_10
+  - first:
+      213: 6110595196386139951
+    second: SnowBall_11
+  - first:
+      213: -8238015418418280177
+    second: SnowBall_12
+  - first:
+      213: 4066940855579474315
+    second: SnowBall_13
+  - first:
+      213: -7005601632107187682
+    second: SnowBall_14
+  - first:
+      213: 3801707966282366936
+    second: SnowBall_15
+  - first:
+      213: 7555609417732812562
+    second: SnowBall_16
+  - first:
+      213: -4223155167849624521
+    second: SnowBall_17
+  - first:
+      213: 8229822728275981057
+    second: SnowBall_18
+  - first:
+      213: -6773892923956043102
+    second: SnowBall_19
+  - first:
+      213: -4029695430756070307
+    second: SnowBall_20
+  - first:
+      213: -6599576149069881616
+    second: SnowBall_21
+  - first:
+      213: 3451923931926767084
+    second: SnowBall_22
+  - first:
+      213: 1055555948769333593
+    second: SnowBall_23
+  - first:
+      213: 3097238630890064207
+    second: SnowBall_24
+  - first:
+      213: -8635012596531535933
+    second: SnowBall_25
+  - first:
+      213: -5815642585901643882
+    second: SnowBall_26
+  - first:
+      213: -8821231741252223255
+    second: SnowBall_27
+  - first:
+      213: -8671009190747327889
+    second: SnowBall_28
+  - first:
+      213: 6208546928695793913
+    second: SnowBall_29
+  - first:
+      213: 6012865537273688354
+    second: SnowBall_0
+  - first:
+      213: -6448779238421239088
+    second: SnowBall_1
+  - first:
+      213: -7386954450156832524
+    second: SnowBall_2
+  - first:
+      213: -1736312011888913752
+    second: SnowBall_3
+  - first:
+      213: -7331051913150206582
+    second: SnowBall_4
+  - first:
+      213: -1589102807375544249
+    second: SnowBall_5
+  - first:
+      213: 8374260742323650912
+    second: SnowBall_6
+  - first:
+      213: 6801755276600663755
+    second: SnowBall_7
+  - first:
+      213: 4859276998174893380
+    second: SnowBall_8
+  - first:
+      213: 396004242384363284
+    second: SnowBall_9
+  - first:
+      213: 7459959148404179578
+    second: SnowBall_10
+  - first:
+      213: 3202395812394039363
+    second: SnowBall_11
+  - first:
+      213: -2382775026458603124
+    second: SnowBall_12
+  - first:
+      213: -3626989308306031014
+    second: SnowBall_13
+  - first:
+      213: -693849159891731462
+    second: SnowBall_14
+  - first:
+      213: 6798976245484567727
+    second: SnowBall_15
+  - first:
+      213: 7365542948577951422
+    second: SnowBall_16
+  - first:
+      213: -7614754110443013836
+    second: SnowBall_17
+  - first:
+      213: 8112349549895114483
+    second: SnowBall_18
+  - first:
+      213: -827848482237976724
+    second: SnowBall_19
+  - first:
+      213: 3261757486707495424
+    second: SnowBall_20
+  - first:
+      213: -4650472713112096915
+    second: SnowBall_21
+  - first:
+      213: -791047880647404501
+    second: SnowBall_22
+  - first:
+      213: -2040645664769575075
+    second: SnowBall_23
+  - first:
+      213: 653604858530361155
+    second: SnowBall_24
+  - first:
+      213: -886485690849049096
+    second: SnowBall_25
+  - first:
+      213: -7389079802324680386
+    second: SnowBall_26
+  - first:
+      213: -3508245345077326441
+    second: SnowBall_27
+  - first:
+      213: -3315943914848535813
+    second: SnowBall_28
+  - first:
+      213: 4631313664579762370
+    second: SnowBall_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SnowBall_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 334
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221f26f395df17350800000000000000
+      internalID: 6012865537273688354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 334
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0daecf223755186a0800000000000000
+      internalID: -6448779238421239088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 334
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8396ab0144c7990800000000000000
+      internalID: -7386954450156832524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 334
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a21e10bc6167e7e0800000000000000
+      internalID: -1736312011888913752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 334
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8debb6602fd24a90800000000000000
+      internalID: -7331051913150206582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_5
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 334
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7400ec68a6f52f9e0800000000000000
+      internalID: -1589102807375544249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 268
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06143b2c6c9573470800000000000000
+      internalID: 8374260742323650912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_7
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 268
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcedbe60360b46e50800000000000000
+      internalID: 6801755276600663755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 268
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445e07d2fae9f6340800000000000000
+      internalID: 4859276998174893380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_9
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 268
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f1ed4a2c3ee7500800000000000000
+      internalID: 396004242384363284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_10
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 268
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a728e872259178760800000000000000
+      internalID: 7459959148404179578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_11
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 268
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348f1fb3602317c20800000000000000
+      internalID: 3202395812394039363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 202
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c815348ecbeaeeed0800000000000000
+      internalID: -2382775026458603124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_13
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 202
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e7742d0785aadc0800000000000000
+      internalID: -3626989308306031014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_14
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 202
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb33f08dd3fe56f0800000000000000
+      internalID: -693849159891731462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_15
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 202
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac3d6c6fd0da5e50800000000000000
+      internalID: 6798976245484567727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_16
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 202
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe3fd3994aa73660800000000000000
+      internalID: 7365542948577951422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_17
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 202
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43939133b75f25690800000000000000
+      internalID: -7614754110443013836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 136
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe5c4f3fead49070800000000000000
+      internalID: 8112349549895114483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_19
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 136
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6feb580134e284f0800000000000000
+      internalID: -827848482237976724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_20
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 136
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002dba21727144d20800000000000000
+      internalID: 3261757486707495424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 136
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f6e49e4b3367fb0800000000000000
+      internalID: -4650472713112096915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_22
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 136
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b249fa9c422a505f0800000000000000
+      internalID: -791047880647404501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_23
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 136
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57f7f6649b2ea3e0800000000000000
+      internalID: -2040645664769575075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 70
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34feb28e722121900800000000000000
+      internalID: 653604858530361155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_25
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 70
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5c97206f192b3f0800000000000000
+      internalID: -886485690849049096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_26
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 70
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e318c6d9117b47990800000000000000
+      internalID: -7389079802324680386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_27
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 70
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d8fb53275305fc0800000000000000
+      internalID: -3508245345077326441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_28
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 70
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfab55cf3966bf1d0800000000000000
+      internalID: -3315943914848535813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowBall_29
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 70
+        width: 66
+        height: 66
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c870bc7d3bb54040800000000000000
+      internalID: 4631313664579762370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

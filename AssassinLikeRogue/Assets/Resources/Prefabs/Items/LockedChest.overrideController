@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LockedChest
+  m_Controller: {fileID: 9100000, guid: 5afadb46ac210b649b20c2ae8ce63ab1, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 33f5118a8396a0f42811d1131b2e6522, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ad35861f43d464b49a65b9c39b760540, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6ef047b2cb3c0124b808484e14f7a818, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c576782a07991dc418de69a627a3a983, type: 2}

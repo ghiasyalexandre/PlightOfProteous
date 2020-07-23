@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3609478163040103560}
   - component: {fileID: 2087492306988007306}
   - component: {fileID: -8250539418665311623}
+  - component: {fileID: -172312909177366758}
   m_Layer: 5
   m_Name: HitEffectTest
   m_TagString: Untagged
@@ -51,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1878c194cfa707349b225b4165fe0ab5, type: 2}
+  - {fileID: 2100000, guid: 436b618a13149944596e6bb221376c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -219018743
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3562146657756488239, guid: 27a83348a13dacd49a08d9007289521f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -113,9 +114,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6af5c11fe14aa73478b3e1a7f5939622, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1ce6b64768a21ac4a98186c04fed8ee4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -199,3 +200,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-172312909177366758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218093879471610443}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70468c58da5f27449b94766d43da906a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 29.019075, g: 29.019075, b: 29.019075, a: 0}

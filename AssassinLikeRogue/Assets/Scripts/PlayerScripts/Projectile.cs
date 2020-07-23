@@ -5,21 +5,29 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     private GameObject owner;
-    private float arrowDamage;
-    private float critMultiplier;
+    private int projectileDamage;
+    private int critMultiplier;
     private float critChance;
     private Vector3 velocity;
     private bool canPierce = false;
+    private bool explosive = false;
     private float lifetime;
-    private float maxLifeTime = 2f;
-
-    private GameObject hitEffect;
+    private float maxLifeTime = 1f;
+    private float blastRadius = 0.3f;
+    private float force = 15f;
+    private Color setColor;
+    private float intensity = 3f;
+    private int hitEffectToPool;
 
     public GameObject Owner { set { owner = value; } }
 
-    public float ArrowDamage { set { arrowDamage = value; } }
+    public Color SetColor { set { setColor = value; } }
 
-    public float CritMultiplier { set { critMultiplier = value; } }
+    public float Intensity { set { intensity = value; } }
+
+    public int ProjectileDamage { set { projectileDamage = value; } }
+
+    public int CritMultiplier { set { critMultiplier = value; } }
 
     public float CritChance { set { critChance = value; } }
 
@@ -27,9 +35,20 @@ public class Projectile : MonoBehaviour
 
     public bool CanPierce { set { canPierce = value; } }
 
+    public bool Explosive { set { explosive = value; } }
+
+    public float BlastRadius { set { blastRadius = value; } }
+
+    public int HitEffectToPool { set { hitEffectToPool = value; } }
+
+    private SpriteRenderer spriteRenderer;
+
     private void OnEnable()
     {
         lifetime = maxLifeTime;
+        //spriteRenderer = GetComponent<SpriteRenderer>();
+        //spriteRenderer.color = setColor;
+        //spriteRenderer.material.SetColor("_Color", new Color(intensity, intensity, intensity, 0f));
     }
 
     private void Update()
@@ -50,58 +69,107 @@ public class Projectile : MonoBehaviour
         foreach(RaycastHit2D hit in hits)
         {
             GameObject other = hit.collider.gameObject;
-            if (other != owner)
+            //if (other != owner)
+            //{
+            if (other.tag == "Player" || other.tag == "Projectile")
             {
-                if (other.CompareTag("Wall"))
-                {
-                    DestroyProjectile();
-                }
-
-                Health takeDamage = other.GetComponent<Health>();
-
-                if (takeDamage == null)
-                    takeDamage = other.GetComponentInParent<Health>();
-                if (takeDamage == null)
-                    takeDamage = other.GetComponentInChildren<Health>();
-                if (takeDamage != null && takeDamage.Invulnerable == false)
-                {
-                    hitEffect = ObjectPooler.SharedInstance.GetPooledObject(1);
-                    hitEffect.SetActive(true);
-                    hitEffect.transform.position = transform.position;
-                    bool isCriticalHit = Random.Range(0, 100) < critChance ? true : false;
-                    if (isCriticalHit)
-                    {
-                        takeDamage.ModifyHealth(arrowDamage * critMultiplier);
-                        DamagePopup.Create(transform.position, (int)(arrowDamage * critMultiplier), isCriticalHit);
-                    }
-                    else
-                    {
-                        takeDamage.ModifyHealth(arrowDamage);
-                        DamagePopup.Create(transform.position, (int)arrowDamage, isCriticalHit);
-                    }
-
-                    //StartCoroutine(HideEffect());
-
-                    if (canPierce)
-                        continue;
-                    else
-                        DestroyProjectile();
-                }
+                continue;
             }
+            if (other.tag == "Wall")
+            {
+                DestroyProjectile();
+            }
+            
+            Health takeDamage = other.GetComponent<Health>();
+
+            if (takeDamage == null)
+                takeDamage = other.GetComponentInParent<Health>();
+            if (takeDamage == null)
+                takeDamage = other.GetComponentInChildren<Health>();
+            if (takeDamage != null && takeDamage.Invulnerable == false)
+            {
+                GameObject hitEffect = ObjectPooler.SharedInstance.GetPooledObject(hitEffectToPool);
+                hitEffect.SetActive(true);
+                hitEffect.GetComponent<SpriteRenderer>().material.SetColor("_Color", new Color(intensity, intensity, intensity, 0f));
+                //hitEffect.GetComponent<SpriteRenderer>().color = setColor;
+                hitEffect.transform.position = this.transform.position;
+
+                bool isCriticalHit = Random.Range(0, 100) < critChance ? true : false;
+                if (isCriticalHit)
+                {
+                    takeDamage.ModifyHealth(projectileDamage * critMultiplier);
+                }
+                else
+                {
+                    takeDamage.ModifyHealth(projectileDamage);
+                }
+
+                //StartCoroutine(HideEffect(0.5f));
+
+                if (explosive)
+                {
+                    GameObject explosionEffect = ObjectPooler.SharedInstance.GetPooledObject((int)ObjectToPool.ExplosionEffect);
+                    explosionEffect.SetActive(true);
+                    explosionEffect.transform.position = this.transform.position;
+                    Explode();
+                }
+
+                if (canPierce)
+                    continue;
+                else
+                    DestroyProjectile();
+            }
+            //}
         }
         transform.position = newPosition;
     }
 
     public void DestroyProjectile()
     {
-        if (hitEffect != null)
-            hitEffect.SetActive(false);
+        //if (hitEffect.activeInHierarchy)
+        //    hitEffect.SetActive(false);
+        //if (explosionEffect.activeInHierarchy)
+        //    explosionEffect.SetActive(false);
         gameObject.SetActive(false);
+
+        //StartCoroutine(HideProjectile());
     }
 
-    private IEnumerator HideEffect()
+    private void Explode()
     {
-        yield return new WaitForSeconds(0.8f);
-        hitEffect.SetActive(false);
+        Collider2D[] collidersToDestroy = Physics2D.OverlapCircleAll(transform.position, blastRadius);
+
+        foreach (Collider2D nearbyObject in collidersToDestroy)
+        {
+            Health nearbyObjectIModifyHealth = nearbyObject.GetComponent<Health>();
+            if (nearbyObjectIModifyHealth != null)
+            {
+                nearbyObjectIModifyHealth.ModifyHealth(projectileDamage);
+            }
+        }
+
+        Collider2D[] collidersToMove = Physics2D.OverlapCircleAll(transform.position, blastRadius);
+
+        foreach (Collider2D nearbyObject in collidersToMove)
+        {
+            Rigidbody2D rb = nearbyObject.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.AddExplosionForce(force, this.transform.position, blastRadius);
+            }
+        }
+    }
+
+    private IEnumerator HideEffect(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        //hitEffectToPool.SetActive(false);
+        //explosionEffect.SetActive(false); 
+    }
+
+    private IEnumerator HideProjectile()
+    {
+        yield return new WaitForSeconds(maxLifeTime);
+        gameObject.SetActive(false);
     }
 }

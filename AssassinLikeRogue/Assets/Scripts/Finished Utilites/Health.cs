@@ -1,39 +1,66 @@
 ﻿using System.Collections;
-using System;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
 public class Health : MonoBehaviour, IModifyHealth
 {
-    [SerializeField] private float health;
-    [SerializeField] private float maxHealth;
+    [SerializeField] private int health;
+    [SerializeField] private int maxHealth;
     [SerializeField] private Material matDefault;
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private SpriteRenderer extraSpriteRenderer;
     public float invulnerablityTime = 0.15f;
     private bool invulnerable = false;
 
-    public HealthBar hpBar;
-    public Dissolve dissolve;
+    private FlashEff flash;
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
 
     public bool Invulnerable { get { return invulnerable; } }
 
     private void OnEnable()
     {
         health = maxHealth;
-        hpBar.SetHealth(health);
-        hpBar.SetMaxHealth(maxHealth);
+        flash = GetComponent<FlashEff>();
     }
 
-    public void ModifyHealth(float amount)
+    void Update()
+    {
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < health)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+
+            if (i < maxHealth)
+            {
+                hearts[i].enabled = true;
+            }
+            else
+            {
+                hearts[i].enabled = false;
+            }
+        }
+    }
+
+    public void ModifyHealth(int amount)
     {
         if (amount < 0)
         {
             if (!invulnerable)
             {
                 health += amount;
-                StartCoroutine(dissolve.DissolveCoroutine(2f));
+                flash.Flash();
                 StartCoroutine(InvulnerablityTime(invulnerablityTime));
             }
         }
@@ -49,21 +76,20 @@ public class Health : MonoBehaviour, IModifyHealth
         if (health <= 0)
         {
             health = 0;
-            StartCoroutine(dissolve.DissolveCoroutine(90f));
+            flash.Flash();
         }
-
-        float pct = health / maxHealth;
-        hpBar.SetHealth(health);
-        hpBar.HandleHealthChanged(pct);
     }
 
-    public float GetHealth()
+    public int GetHealth()
     { return health; }
 
-    public void SetHealth(float value)
+    public int GetMaxHealth()
+    { return maxHealth; }
+
+    public void SetHealth(int value)
     { health = value; }
 
-    public void SetMaxHealth(float value)
+    public void SetMaxHealth(int value)
     { maxHealth = value; }
 
     private IEnumerator InvulnerablityTime(float time)

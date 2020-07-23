@@ -17,14 +17,15 @@ public class Sync : StateMachineBehaviour
     //}
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-   override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if(animator.GetFloat("MoveMagnitude") > 0.0f)
+        if (animator.GetFloat("MoveMagnitude") > 0.0f)
         {
-            Animator bottomAnimator = animator.gameObject.transform.parent.parent.GetComponent<PlayerController>().botAnimator;
-            float normalizedTime = bottomAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+            Animator legsAnimator = animator.gameObject.transform.parent.parent.GetComponent<PlayerController>().legAnimator;
+            float normalizedTime = legsAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime;
             animator.Play("Run", -1, normalizedTime);
         }
+
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
