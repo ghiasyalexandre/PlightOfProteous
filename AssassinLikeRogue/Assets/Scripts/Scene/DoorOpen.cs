@@ -18,9 +18,9 @@ public class DoorOpen : MonoBehaviour
     private void Update()
     {
         if (canOpen && isLocked == false)
-            doorAnimator.SetBool("Open", canOpen);
+            doorAnimator.SetBool("Open", true);
         else
-            doorAnimator.SetBool("Open", canOpen);
+            doorAnimator.SetBool("Open", false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

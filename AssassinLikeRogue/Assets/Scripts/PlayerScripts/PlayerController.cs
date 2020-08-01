@@ -244,27 +244,28 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-
+            projectilePooled = ObjectToPool.Arrow;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-
+            projectilePooled = ObjectToPool.MagicMis;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-
+            projectilePooled = ObjectToPool.MagicRain;
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-
+            projectilePooled = ObjectToPool.LightPulse;
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
+            projectilePooled = ObjectToPool.Snowball;
 
         }
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-
+            projectilePooled = ObjectToPool.LightPulse;
         }
 
         if (Input.GetKeyDown(KeyCode.Tab))

@@ -31,6 +31,7 @@ public class RoomInstance : MonoBehaviour
     float checkTime = 1.5f;
     int numberOfEnemies;
     private EnemyAI[] roomEnemies;
+    private List<DoorOpen> doors = new List<DoorOpen>();
     LayerMask enemyMask; // = LayerMask.GetMask("Enemy");
     private Collider2D[] colliders;
     public Collider2D[] GetColliders() { return colliders; }
@@ -234,41 +235,40 @@ public class RoomInstance : MonoBehaviour
 
     void ActivateRoom()
     {
-        LockRoom(true);
-
         int i;
-        colliders = Physics2D.OverlapAreaAll(new Vector2(transform.position.x - transform.localScale.x * 0.45f, transform.position.y - transform.localScale.y * 0.45f),
-                                             new Vector2(transform.position.x + transform.localScale.x * 0.45f, transform.position.y + transform.localScale.y * 0.45f), enemyMask);
+        colliders = Physics2D.OverlapAreaAll(new Vector2(transform.position.x - transform.localScale.x * 0.48f, transform.position.y - transform.localScale.y * 0.48f),
+                                             new Vector2(transform.position.x + transform.localScale.x * 0.48f, transform.position.y + transform.localScale.y * 0.48f), enemyMask);
         //colliders = Physics2D.BoxCastAll(transform.position, new Vector2(transform.lossyScale.x, transform.lossyScale.y), 0f, 0f);
 
         for (i = 0; i < colliders.Length; i++)
         {
             Debug.Log("Enemy: " + colliders[i].name + " With Tag: " + colliders[i].gameObject.tag);
             if (colliders[i].gameObject.tag == "Enemy")
+            {
                 colliders[i].GetComponent<EnemyAI>().Aggro = true;
+                continue;
+            }
 
+            var _door = colliders[i].GetComponent<DoorOpen>();
+
+            if (_door != null)
+            {
+                doors.Add(_door);
+            }
         }
 
-        Color rayColor = Color.grey;
-        if (colliders == null)
-        {
-            rayColor = Color.red;
-        }
-        else
-        {
-            rayColor = Color.green;
-        }
         numberOfEnemies = i + 1;
         playerEntered = false;
         isClearing = true;
+        LockRoom(true);
     }
 
     void LockRoom(bool toLock)
     {
-        doorL.GetComponent<DoorOpen>().IsLocked = toLock;
-        doorR.GetComponent<DoorOpen>().IsLocked = toLock;
-        doorU.GetComponent<DoorOpen>().IsLocked = toLock;
-        doorD.GetComponent<DoorOpen>().IsLocked = toLock;
+        foreach (DoorOpen door in doors)
+        {
+            door.IsLocked = toLock;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
