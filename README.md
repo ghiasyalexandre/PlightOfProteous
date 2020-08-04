@@ -14,4 +14,6 @@ Right-Click = Spawn Orbs
 
 Space = Dash
 
+Left-Shift = Walk
+
 Esc = Options Menu
