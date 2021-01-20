@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ea31aae765cfb4fbd5e0c9d25d82df, type: 3}
+  m_Name: GuardianRobot
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -4830897965443165712, guid: 7b9e7e9ee11acf447aa1318e46840a6a, type: 3}
+  eName: Guardian
+  animatorOverride: {fileID: 22100000, guid: e4be31e776aa5564aa7a353d19061273, type: 2}
+  health: 4
+  maxHealth: 4
+  damage: 1
+  speed: 1
+  healthBarOffset: {x: 0, y: 0.18, z: 0}
+  projectile: {fileID: 11400000, guid: 82acc28a1d2301a45a4fc9cd29de14c3, type: 2}
+  hitEffect: 11
+  projectileSpeed: 1.8
+  retreatSpeed: 0.6
+  aggroDistance: 2
+  stoppingDistance: 0.78
+  retreatDistance: 0.58
+  startTimeBtwShots: 0.9
+  startWaitTime: 0.1
+  maxLifeTime: 0.5
+  blastRadius: 0.3
+  numMaxBounces: 3
+  knockbackForce: 50
+  canKnockback: 1
+  canPierce: 0
+  canDeflect: 0
+  canBounce: 0
+  canSpin: 0
+  isExplosive: 0
+  flipX: 1
+  intensity: 3
+  scaleSize: {x: 0.3, y: 0.3, z: 0.3}
+  colliderSize: {x: 0.36, y: 0.68}

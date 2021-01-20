@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d666d8b89c23e4c88ec15df234b71f, type: 3}
+  m_Name: Projectile
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  pName: FireArr
+  description: 
+  animatorOverride: {fileID: 0}
+  hitEffectPooled: 0
+  projectileDamage: 3
+  speed: 0
+  critChance: 0
+  critMultiplier: 0
+  maxLifeTime: 0
+  melee: 0
+  canBounce: 0
+  canPierce: 0
+  canDeflect: 0
+  knockback: 0
+  explosive: 0
+  spin: 0
+  numMaxBounces: 0
+  knockbackForce: 0
+  deflectTarget: 
+  deflectStrength: 0
+  blastRadius: 0
+  meleeRange: 0
+  meleeBoxSize: {x: 0, y: 0}
+  explosionForce: 0
+  intensity: 0
+  hitEffectIntensity: 0
+  setColor: {r: 0, g: 0, b: 0, a: 0}
+  flipX: 0
+  flipY: 0
+  offset: 0
+  scaleSize: {x: 0, y: 0, z: 0}

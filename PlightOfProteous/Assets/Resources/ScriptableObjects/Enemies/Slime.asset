@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ea31aae765cfb4fbd5e0c9d25d82df, type: 3}
+  m_Name: Slime
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -2932391487199770309, guid: b4c79f2f223288d43a13c36b0d648e74, type: 3}
+  eName: Slime
+  animatorOverride: {fileID: 22100000, guid: c2b6fef7127d97745af63a975989800b, type: 2}
+  health: 3
+  maxHealth: 3
+  damage: 1
+  speed: 1.5
+  healthBarOffset: {x: 0, y: 0.1, z: 0}
+  projectile: {fileID: 11400000, guid: 34484f538961d254ca7607d8da7d3494, type: 2}
+  hitEffect: 6
+  projectileSpeed: 1.8
+  retreatSpeed: 0.6
+  aggroDistance: 2
+  stoppingDistance: 0.78
+  retreatDistance: 0.58
+  startTimeBtwShots: 0.9
+  startWaitTime: 0.1
+  maxLifeTime: 8
+  blastRadius: 0.3
+  numMaxBounces: 3
+  knockbackForce: 120
+  canKnockback: 1
+  canPierce: 0
+  canDeflect: 0
+  canBounce: 0
+  canSpin: 0
+  isExplosive: 0
+  flipX: 0
+  intensity: 3
+  scaleSize: {x: 0.4, y: 0.4, z: 0.4}
+  colliderSize: {x: 0.5, y: 0.47}

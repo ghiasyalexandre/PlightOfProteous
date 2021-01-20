@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d666d8b89c23e4c88ec15df234b71f, type: 3}
+  m_Name: Meteor
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -5731630335041382548, guid: b3b88212362e3564e96efd1dde84435d, type: 3}
+  pName: Meteor
+  description: 
+  animatorOverride: {fileID: 22100000, guid: f484bfa1c27455046bc54ab05b34bd87, type: 2}
+  hitEffectPooled: 9
+  projectileDamage: 2
+  speed: 2
+  critChance: 0
+  critMultiplier: 0
+  maxLifeTime: 0.1
+  melee: 1
+  canBounce: 0
+  canPierce: 0
+  canDeflect: 0
+  knockback: 0
+  explosive: 1
+  spin: 0
+  numMaxBounces: 0
+  knockbackForce: 0
+  deflectTarget: 
+  deflectStrength: 0
+  blastRadius: 0.45
+  meleeRange: 0.45
+  meleeBoxSize: {x: 0.45, y: 0.6}
+  explosionForce: 80
+  intensity: 3
+  hitEffectIntensity: 3
+  setColor: {r: 1, g: 1, b: 1, a: 1}
+  flipX: 0
+  flipY: 1
+  offset: 0.2
+  scaleSize: {x: 0.6, y: 0.6, z: 0.6}

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d666d8b89c23e4c88ec15df234b71f, type: 3}
+  m_Name: LightPulse
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  pName: Light Pulse
+  description: 
+  animatorOverride: {fileID: 22100000, guid: 78e5377c246166540ac8aef94855dde2, type: 2}
+  hitEffectPooled: 7
+  projectileDamage: 1
+  speed: 2
+  critChance: 0
+  critMultiplier: 0
+  maxLifeTime: 4
+  melee: 0
+  canBounce: 1
+  canPierce: 0
+  canDeflect: 0
+  knockback: 1
+  explosive: 0
+  spin: 0
+  numMaxBounces: 2
+  knockbackForce: 50
+  deflectTarget: 
+  deflectStrength: 0
+  blastRadius: 0
+  meleeRange: 0
+  meleeBoxSize: {x: 0, y: 0}
+  explosionForce: 0
+  intensity: 18
+  hitEffectIntensity: 3
+  setColor: {r: 1, g: 1, b: 1, a: 1}
+  flipX: 0
+  flipY: 0
+  offset: 0.3
+  scaleSize: {x: 1.1, y: 1.1, z: 1.1}
