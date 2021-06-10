@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1409727449687202077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409727449687202072}
+  - component: {fileID: 1409727449687202075}
+  - component: {fileID: 1409727449687202074}
+  m_Layer: 11
+  m_Name: MapSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1409727449687202072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409727449687202077}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1409727449687202075
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409727449687202077}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: fcc4d8256cdf2e34ab6a0b5e044666ca, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 89e35c2b2fe45644e91a402b1464846b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 16, y: 8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1409727449687202074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409727449687202077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba050df52cce7e4e9d161eed9f51e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spU: {fileID: 21300000, guid: e9bd07c573e102e4fbf327239e0a3c9a, type: 3}
+  spD: {fileID: 21300000, guid: 8e6c9ac4a24bfb74786f2eb096d29a51, type: 3}
+  spR: {fileID: 21300000, guid: 92b1cc6eebf9d6648aa684bc84e0619e, type: 3}
+  spL: {fileID: 21300000, guid: 5f1687d2fb1c3f94eb6ce292ce531211, type: 3}
+  spUD: {fileID: 21300000, guid: 60839fb760d09e14e85cec2c66155ebf, type: 3}
+  spRL: {fileID: 21300000, guid: 8544847ef292717478317d63c45367fe, type: 3}
+  spUR: {fileID: 21300000, guid: ec413b7b5f12e44488b5efe6ffb1d3a1, type: 3}
+  spUL: {fileID: 21300000, guid: 5c8572df4a5bf8c4993bcdcaa6df8cfc, type: 3}
+  spDR: {fileID: 21300000, guid: bc97a6a98a60f0f44ab9423f772f3381, type: 3}
+  spDL: {fileID: 21300000, guid: 93199895168121648a6e674b26cfab58, type: 3}
+  spULD: {fileID: 21300000, guid: 3238a9aec37f982499d19e6c4ec6a476, type: 3}
+  spRUL: {fileID: 21300000, guid: 9284eee6cef10c449b72b29e57c5d88c, type: 3}
+  spDRU: {fileID: 21300000, guid: 82cb626c2207a7e4c97eda72ae99b0b5, type: 3}
+  spLDR: {fileID: 21300000, guid: e54ec4b0c966d6240a570245429a9f47, type: 3}
+  spUDRL: {fileID: 21300000, guid: 89e35c2b2fe45644e91a402b1464846b, type: 3}
+  up: 0
+  down: 0
+  left: 0
+  right: 0
+  type: 0
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  enterColor: {r: 0, g: 0.5943396, b: 0.06419451, a: 1}
+  bossColor: {r: 0.8301887, g: 0, b: 0, a: 1}

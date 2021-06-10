@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d666d8b89c23e4c88ec15df234b71f, type: 3}
+  m_Name: SnowBall
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -270039738421603607, guid: 87829b6f3cd81c649a52fe9ca0cd5098, type: 3}
+  pName: Snow Ball
+  description: 
+  animatorOverride: {fileID: 22100000, guid: 753e7eaf0b42b3946848fd5f8b232f19, type: 2}
+  hitEffectPooled: 7
+  projectileDamage: 1
+  speed: 1.5
+  critChance: 0
+  critMultiplier: 0
+  maxLifeTime: 2
+  melee: 0
+  canBounce: 0
+  canPierce: 0
+  canDeflect: 1
+  knockback: 1
+  explosive: 0
+  spin: 0
+  numMaxBounces: 0
+  knockbackForce: 100
+  deflectTarget: 
+  deflectStrength: 2
+  blastRadius: 0
+  meleeRange: 0
+  meleeBoxSize: {x: 0, y: 0}
+  explosionForce: 0
+  intensity: 3
+  hitEffectIntensity: 3
+  setColor: {r: 1, g: 1, b: 1, a: 1}
+  flipX: 0
+  flipY: 0
+  offset: 0.365
+  scaleSize: {x: 0.5, y: 0.5, z: 0.5}

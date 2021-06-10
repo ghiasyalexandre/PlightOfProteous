@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 90c2f53eb3ceac542a829a1f2044b686
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7819501904191261792
+    second: GroundLazer_0
+  - first:
+      213: -3030595925713165256
+    second: GroundLazer_1
+  - first:
+      213: 233925250824022728
+    second: GroundLazer_2
+  - first:
+      213: -5657744640571820543
+    second: GroundLazer_3
+  - first:
+      213: -6553433002579607719
+    second: GroundLazer_4
+  - first:
+      213: 7473891981596061250
+    second: GroundLazer_5
+  - first:
+      213: -1489307980568501237
+    second: GroundLazer_6
+  - first:
+      213: 7783401737272046948
+    second: GroundLazer_0
+  - first:
+      213: -5789887882381390788
+    second: GroundLazer_1
+  - first:
+      213: -1055358375560887746
+    second: GroundLazer_2
+  - first:
+      213: 8141791876984027284
+    second: GroundLazer_3
+  - first:
+      213: 8005825197968118432
+    second: GroundLazer_4
+  - first:
+      213: 7491305520967208901
+    second: GroundLazer_5
+  - first:
+      213: 3276970068442511966
+    second: GroundLazer_6
+  - first:
+      213: 5145380232351017847
+    second: GroundLazer_7
+  - first:
+      213: 2759226873348760784
+    second: GroundLazer_8
+  - first:
+      213: 8620387422629379259
+    second: GroundLazer_9
+  - first:
+      213: -1842935857934281307
+    second: GroundLazer_10
+  - first:
+      213: 2671104909987187429
+    second: GroundLazer_11
+  - first:
+      213: -3051131047485536513
+    second: GroundLazer_12
+  - first:
+      213: -8539392560192826606
+    second: GroundLazer_13
+  - first:
+      213: -3288699236434510998
+    second: GroundLazer_14
+  - first:
+      213: -9192160587599410023
+    second: GroundLazer_15
+  - first:
+      213: -6173114021524740550
+    second: GroundLazer_16
+  - first:
+      213: 7048344179712829036
+    second: GroundLazer_17
+  - first:
+      213: -5106872983980333761
+    second: GroundLazer_18
+  - first:
+      213: -8967791486829847414
+    second: GroundLazer_19
+  - first:
+      213: 1840215471022076082
+    second: GroundLazer_20
+  - first:
+      213: -7136749102426058883
+    second: GroundLazer_21
+  - first:
+      213: 5250011048598819240
+    second: GroundLazer_22
+  - first:
+      213: -1467534155049301936
+    second: GroundLazer_23
+  - first:
+      213: -1847032418136643657
+    second: GroundLazer_24
+  - first:
+      213: -9038105102792284292
+    second: GroundLazer_25
+  - first:
+      213: -6416415292689003598
+    second: GroundLazer_26
+  - first:
+      213: -4926533120112473245
+    second: GroundLazer_27
+  - first:
+      213: 1583011950185085253
+    second: GroundLazer_28
+  - first:
+      213: -1710270739513409346
+    second: GroundLazer_29
+  - first:
+      213: 3051903315863786067
+    second: GroundLazer_30
+  - first:
+      213: -5847964633167328482
+    second: GroundLazer_31
+  - first:
+      213: 6795770310149930801
+    second: GroundLazer_32
+  - first:
+      213: -8247969609052765148
+    second: GroundLazer_33
+  - first:
+      213: 7147746354189681945
+    second: GroundLazer_34
+  - first:
+      213: 2312008329037948120
+    second: GroundLazer_35
+  - first:
+      213: 7261145633305732456
+    second: GroundLazer_36
+  - first:
+      213: 3414149305874441228
+    second: GroundLazer_37
+  - first:
+      213: 9053993424127013324
+    second: GroundLazer_38
+  - first:
+      213: -4012535027616376962
+    second: GroundLazer_39
+  - first:
+      213: -293404979704521214
+    second: GroundLazer_40
+  - first:
+      213: 1243983499223090105
+    second: GroundLazer_41
+  - first:
+      213: -3429955617510093747
+    second: GroundLazer_42
+  - first:
+      213: -461970843071374320
+    second: GroundLazer_43
+  - first:
+      213: -4344230217940553432
+    second: GroundLazer_44
+  - first:
+      213: 8290480989431802156
+    second: GroundLazer_45
+  - first:
+      213: -2286236353591039624
+    second: GroundLazer_46
+  - first:
+      213: 1598720335133971987
+    second: GroundLazer_47
+  - first:
+      213: -2603679568098540193
+    second: GroundLazer_48
+  - first:
+      213: 7250230544247036942
+    second: GroundLazer_49
+  - first:
+      213: -4726606105773519217
+    second: GroundLazer_50
+  - first:
+      213: -271101375255572036
+    second: GroundLazer_51
+  - first:
+      213: -4542779011199921723
+    second: GroundLazer_52
+  - first:
+      213: 3824861623379199435
+    second: GroundLazer_53
+  - first:
+      213: -434285112520465487
+    second: GroundLazer_54
+  - first:
+      213: 7758622034849389771
+    second: GroundLazer_55
+  - first:
+      213: -3758968648918383237
+    second: GroundLazer_56
+  - first:
+      213: 8858009302459906495
+    second: GroundLazer_57
+  - first:
+      213: 1642587843726487386
+    second: GroundLazer_58
+  - first:
+      213: 6872080407772134310
+    second: GroundLazer_59
+  - first:
+      213: 1385974182401358500
+    second: GroundLazer_60
+  - first:
+      213: -8543020891980907839
+    second: GroundLazer_61
+  - first:
+      213: -8335277365618265004
+    second: GroundLazer_62
+  - first:
+      213: -9065050386084326491
+    second: GroundLazer_63
+  - first:
+      213: 6064964984888324743
+    second: GroundLazer_64
+  - first:
+      213: 8303622064841808526
+    second: GroundLazer_65
+  - first:
+      213: -2980005143871799830
+    second: GroundLazer_66
+  - first:
+      213: 2410638385742069505
+    second: GroundLazer_67
+  - first:
+      213: -3923451089196739078
+    second: GroundLazer_68
+  - first:
+      213: -558760598062645126
+    second: GroundLazer_69
+  - first:
+      213: 8528439076466756735
+    second: GroundLazer_70
+  - first:
+      213: -6744568893908308024
+    second: GroundLazer_71
+  - first:
+      213: 4535547156995590755
+    second: GroundLazer_72
+  - first:
+      213: 1576116714190662435
+    second: GroundLazer_73
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GroundLazer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465324e44a2340c60800000000000000
+      internalID: 7783401737272046948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundLazer_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c8159a5af26afa0800000000000000
+      internalID: -5789887882381390788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundLazer_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32c5f1262d9a51f0800000000000000
+      internalID: -1055358375560887746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundLazer_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 80
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4983bc633947df070800000000000000
+      internalID: 8141791876984027284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundLazer_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2d2c2d9976a1f60800000000000000
+      internalID: 8005825197968118432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundLazer_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf4c214ea676f760800000000000000
+      internalID: 7491305520967208901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundLazer_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a7a154ae22a7d20800000000000000
+      internalID: 3276970068442511966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

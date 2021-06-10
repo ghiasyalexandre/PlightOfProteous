@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Projectile
+  - Item
+  - Wall
+  - MoveSpot
+  - SpellNPC
+  - EnemyProj
+  - Boss
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Blocking
+  - Rooms
+  - Item
+  - Map
+  - Enemy
+  - CrossHair
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3245817355
+    locked: 0
+  - name: Foreground
+    uniqueID: 2597513133
+    locked: 0
+  - name: NPC
+    uniqueID: 4171204651
+    locked: 0
+  - name: Player
+    uniqueID: 4075948553
+    locked: 0
+  - name: UI
+    uniqueID: 1163311413
+    locked: 0
